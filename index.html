@@ -1,13 +1,71 @@
-<section>
-  <h2>How it works</h2>
-  <ol>
-    <li>You provide a topic or product.</li>
-    <li>The service generates a short script and a ready-to-post video.</li>
-    <li>You can publish the content through connected tools/APIs.</li>
-  </ol>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VideoFactory — AI short videos</title>
+  <meta name="description" content="VideoFactory creates short AI videos, ready to post on TikTok." />
+  <style>
+    :root{--bg:#0b0c10;--card:#141623;--text:#f4f6ff;--muted:#b7bdd6;--a:#7c5cff;--b:#35d0ff;--br:rgba(255,255,255,.12)}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:
+      radial-gradient(800px 420px at 10% 0%, rgba(124,92,255,.22), transparent 60%),
+      radial-gradient(780px 420px at 90% 10%, rgba(53,208,255,.16), transparent 60%),var(--bg);
+      color:var(--text);line-height:1.55}
+    a{color:inherit;text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:0 auto;padding:44px 18px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 0 0 6px rgba(124,92,255,.12)}
+    nav{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+    nav a{padding:8px 10px;border:1px solid transparent;border-radius:999px}
+    nav a:hover{border-color:var(--br);text-decoration:none}
+    .hero{margin-top:18px;border:1px solid var(--br);border-radius:18px;padding:24px;background:rgba(20,22,35,.70)}
+    .badge{display:inline-block;padding:6px 10px;border:1px solid var(--br);border-radius:999px;color:var(--muted);font-size:12px}
+    h1{margin:12px 0 10px;font-size:34px;letter-spacing:-.03em;line-height:1.1}
+    p{margin:0 0 12px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+    .card{border:1px solid var(--br);border-radius:14px;padding:14px;background:rgba(255,255,255,.03)}
+    .card h3{margin:0 0 6px;font-size:15px;color:var(--text)}
+    .card p{margin:0;font-size:13px}
+    footer{margin-top:22px;padding-top:14px;border-top:1px solid var(--br);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+    @media (max-width:860px){.grid{grid-template-columns:1fr} h1{font-size:30px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="brand"><span class="dot"></span> VideoFactory</div>
+      <nav>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+        <a href="mailto:YOUR_EMAIL">Contact</a>
+      </nav>
+    </header>
 
-  <h2>Support & data deletion</h2>
-  <p>Support: <a href="mailto:TON_EMAIL">lebonplan783@gmail.com</a></p>
-  <p>To request data deletion, email us at <a href="mailto:TON_EMAIL">lebonplan783@gmail.com</a> with the subject “Data Deletion Request”.</p>
-</section>
+    <section class="hero">
+      <span class="badge">Developer Website (TikTok App Review)</span>
+      <h1>Automated AI short videos, ready to publish.</h1>
+      <p>VideoFactory generates a short script + scene plan + final video output (vertical 9:16).</p>
+      <p><strong>Support:</strong> <a href="mailto:YOUR_EMAIL">lebonplan783@gmail.com</a> • <strong>Operator:</strong> raoul / COMPANY</p>
+      <p><strong>Data deletion:</strong> email us with subject “Data Deletion Request”.</p>
 
+      <div class="grid">
+        <div class="card"><h3>What it does</h3><p>Turns a topic/product into a short video package.</p></div>
+        <div class="card"><h3>How it works</h3><p>Input → AI scenes → render → publish via authorized tools/APIs.</p></div>
+        <div class="card"><h3>Permissions</h3><p>We only act on your request after you authorize access.</p></div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> VideoFactory</div>
+      <div>
+        <a href="./privacy.html">Privacy Policy</a> ·
+        <a href="./terms.html">Terms of Service</a> ·
+        <a href="mailto:YOUR_EMAIL">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
